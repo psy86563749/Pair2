@@ -25,15 +25,15 @@ int main()
     ofs << "姓名"<< "," <<"性别" << "," << "专业" << "," <<"绩点"<<","<<"出勤1"<<"," << "出勤2"<<"," <<"出勤3"<<"," << "出勤4"<<","<<"出勤5"<<"," << "出勤6"<<","<<"出勤7"<<"," << "出勤8"<<","<<"出勤9"<<"," << "出勤10"<<","<<"出勤11"<<"," << "出勤12"<<","<<"出勤13"<<"," << "出勤14"<<","<<"出勤15"<<"," << "出勤16"<<","<<"出勤17"<<"," << "出勤18"<<","<<"出勤19"<<"," << "出勤20"<<","<<"出勤率"<<endl;
     for (int i = 0; i < LENTH; i++) {
         double jd,efficiency;
-     string name, sex, major,attendance;
-     DataBaseRoll(name, sex, major, attendance,jd,efficiency);
-     cout << name << "," << sex << "," << major << "," <<jd;
+        string name, sex, major,attendance;
+        DataBaseRoll(name, sex, major, attendance,jd,efficiency);
+        cout << name << "," << sex << "," << major << "," <<jd;
         for(int j=0;j<20;j++)
         {   
             cout<<","<<attendance[j];
         }
         cout<<","<<efficiency<<endl;
-     ofs << name << "," << sex << "," << major << "," <<d2s(jd);
+        ofs << name << "," << sex << "," << major << "," <<d2s(jd);
         for(int j=0;j<20;j++)
         {   
             ofs << "," <<attendance[j];
@@ -48,15 +48,15 @@ int main()
     ofs1 << "姓名"<< "," <<"性别" << "," << "专业" << "," <<"绩点"<<","<<"出勤1"<<"," << "出勤2"<<"," <<"出勤3"<<"," << "出勤4"<<","<<"出勤5"<<"," << "出勤6"<<","<<"出勤7"<<"," << "出勤8"<<","<<"出勤9"<<"," << "出勤10"<<","<<"出勤11"<<"," << "出勤12"<<","<<"出勤13"<<"," << "出勤14"<<","<<"出勤15"<<"," << "出勤16"<<","<<"出勤17"<<"," << "出勤18"<<","<<"出勤19"<<"," << "出勤20"<<","<<"出勤率"<<endl;
      for (int i = 0; i < LENTH; i++) {
         double jd,efficiency;
-    string name, sex, major,attendance;
-    DataBaseRoll(name, sex, major, attendance,jd,efficiency);
-    cout << name << "," << sex << "," << major << "," <<jd;
+        string name, sex, major,attendance;
+        DataBaseRoll(name, sex, major, attendance,jd,efficiency);
+        cout << name << "," << sex << "," << major << "," <<jd;
         for(int j=0;j<20;j++)
         {   
             cout<<","<<attendance[j];
         }
         cout<<","<<(double)efficiency<<endl;
-     ofs1 << name << "," << sex << "," << major << "," <<d2s(jd);
+        ofs1 << name << "," << sex << "," << major << "," <<d2s(jd);
         for(int j=0;j<20;j++)
         {   
             ofs1<<","<<attendance[j];
@@ -69,17 +69,17 @@ int main()
      sleep(3);
      srand(time(0));
      ofs2 << "姓名"<< "," <<"性别" << "," << "专业" << "," <<"绩点"<<","<<"出勤1"<<"," << "出勤2"<<"," <<"出勤3"<<"," << "出勤4"<<","<<"出勤5"<<"," << "出勤6"<<","<<"出勤7"<<"," << "出勤8"<<","<<"出勤9"<<"," << "出勤10"<<","<<"出勤11"<<"," << "出勤12"<<","<<"出勤13"<<"," << "出勤14"<<","<<"出勤15"<<"," << "出勤16"<<","<<"出勤17"<<"," << "出勤18"<<","<<"出勤19"<<"," << "出勤20"<<","<<"出勤率"<<endl;
-        for (int i = 0; i < LENTH; i++) {
+     for (int i = 0; i < LENTH; i++) {
             double jd,efficiency;
-     string name, sex, major,attendance;
-     DataBaseRoll(name, sex, major, attendance,jd,efficiency);
-     cout << name << "," << sex << "," << major << "," <<jd;
+            string name, sex, major,attendance;
+            DataBaseRoll(name, sex, major, attendance,jd,efficiency);
+            cout << name << "," << sex << "," << major << "," <<jd;
             for(int j=0;j<20;j++)
             {   
                 cout<<","<<attendance[j];
             }
             cout<<","<<(double)efficiency<<endl;
-     ofs2 << name << "," << sex << "," << major << "," <<d2s(jd);
+            ofs2 << name << "," << sex << "," << major << "," <<d2s(jd);
             for(int j=0;j<20;j++)
             {   
                 ofs2<<","<<attendance[j];
@@ -89,19 +89,19 @@ int main()
     //图形学
      fstream ofs3("/Users/panshiying/Desktop/图形学.csv", ios::out);
      sleep(3);
-        srand(time(0));
-        ofs3 << "姓名"<< "," <<"性别" << "," << "专业" << "," <<"绩点"<<","<<"出勤1"<<"," << "出勤2"<<"," <<"出勤3"<<"," << "出勤4"<<","<<"出勤5"<<"," << "出勤6"<<","<<"出勤7"<<"," << "出勤8"<<","<<"出勤9"<<"," << "出勤10"<<","<<"出勤11"<<"," << "出勤12"<<","<<"出勤13"<<"," << "出勤14"<<","<<"出勤15"<<"," << "出勤16"<<","<<"出勤17"<<"," << "出勤18"<<","<<"出勤19"<<"," << "出勤20"<<","<<"出勤率"<<endl;
+     srand(time(0));
+     ofs3 << "姓名"<< "," <<"性别" << "," << "专业" << "," <<"绩点"<<","<<"出勤1"<<"," << "出勤2"<<"," <<"出勤3"<<"," << "出勤4"<<","<<"出勤5"<<"," << "出勤6"<<","<<"出勤7"<<"," << "出勤8"<<","<<"出勤9"<<"," << "出勤10"<<","<<"出勤11"<<"," << "出勤12"<<","<<"出勤13"<<"," << "出勤14"<<","<<"出勤15"<<"," << "出勤16"<<","<<"出勤17"<<"," << "出勤18"<<","<<"出勤19"<<"," << "出勤20"<<","<<"出勤率"<<endl;
      for (int i = 0; i < LENTH; i++) {
             double jd,efficiency;
-     string name, sex, major,attendance;
-     DataBaseRoll(name, sex, major, attendance,jd,efficiency);
-     cout << name << "," << sex << "," << major << "," <<jd;
+            string name, sex, major,attendance;
+            DataBaseRoll(name, sex, major, attendance,jd,efficiency);
+            cout << name << "," << sex << "," << major << "," <<jd;
             for(int j=0;j<20;j++)
             {   
                 cout<<","<<attendance[j];
             }
             cout<<","<<efficiency<<endl;
-     ofs3 << name << "," << sex << "," << major << "," <<d2s(jd);
+            ofs3 << name << "," << sex << "," << major << "," <<d2s(jd);
             for(int j=0;j<20;j++)
             {   
                 ofs3<<","<<attendance[j];
@@ -112,18 +112,18 @@ int main()
     fstream ofs4("/Users/panshiying/Desktop/人工智能.csv", ios::out);
     sleep(3);
     srand(time(0));
-        ofs4 << "姓名"<< "," <<"性别" << "," << "专业" << "," <<"绩点"<<","<<"出勤1"<<"," << "出勤2"<<"," <<"出勤3"<<"," << "出勤4"<<","<<"出勤5"<<"," << "出勤6"<<","<<"出勤7"<<"," << "出勤8"<<","<<"出勤9"<<"," << "出勤10"<<","<<"出勤11"<<"," << "出勤12"<<","<<"出勤13"<<"," << "出勤14"<<","<<"出勤15"<<"," << "出勤16"<<","<<"出勤17"<<"," << "出勤18"<<","<<"出勤19"<<"," << "出勤20"<<","<<"出勤率"<<endl;
+    ofs4 << "姓名"<< "," <<"性别" << "," << "专业" << "," <<"绩点"<<","<<"出勤1"<<"," << "出勤2"<<"," <<"出勤3"<<"," << "出勤4"<<","<<"出勤5"<<"," << "出勤6"<<","<<"出勤7"<<"," << "出勤8"<<","<<"出勤9"<<"," << "出勤10"<<","<<"出勤11"<<"," << "出勤12"<<","<<"出勤13"<<"," << "出勤14"<<","<<"出勤15"<<"," << "出勤16"<<","<<"出勤17"<<"," << "出勤18"<<","<<"出勤19"<<"," << "出勤20"<<","<<"出勤率"<<endl;
     for (int i = 0; i < LENTH; i++) {
             double jd,efficiency;
-    string name, sex, major,attendance;
-    DataBaseRoll(name, sex, major, attendance,jd,efficiency);
-    cout << name << "," << sex << "," << major << "," <<jd;
+            string name, sex, major,attendance;
+            DataBaseRoll(name, sex, major, attendance,jd,efficiency);
+            cout << name << "," << sex << "," << major << "," <<jd;
             for(int j=0;j<20;j++)
             {   
                 cout<<","<<attendance[j];
             }
             cout<<","<<(double)efficiency<<endl;
-    ofs4 << name << "," << sex << "," << major << "," <<d2s(jd);
+            ofs4 << name << "," << sex << "," << major << "," <<d2s(jd);
             for(int j=0;j<20;j++)
             {   
                 ofs4<<","<<attendance[j];
